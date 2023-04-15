@@ -12,6 +12,8 @@
     color: #fff;
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 1;
   }
   
   .nav-menu ul {
@@ -30,44 +32,76 @@
     padding: 10px;
     text-decoration: none;
     color: #fff;
-    transition: background-color 0.3s;
   }
   
   .nav-menu a:hover {
     background-color: #555;
   }
+
+  .items-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transform: translateY(100%);
+    z-index: 0;
+  }
   
-  .portfolio-section {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .games-section {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     transform: translateY(100%);
-    transition: transform 0.5s ease-in-out;
+    z-index: 0;
   }
   
-  .portfolio-section ul {
+  .games-section ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
   
-  .portfolio-section li {
+  .games-section li {
     margin: 10px;
   }
   
-  .portfolio-section a {
+  .games-section a {
     color: #000;
     text-decoration: none;
-    transition: color 0.3s;
   }
   
-  .portfolio-section a:hover {
+  .games-section a:hover {
     color: #555;
   }
+
+  .tools-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(100%);
+    z-index: 0;
+  }
   
+  .tools-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tools-section li {
+    margin: 10px;
+  }
+  
+  .tools-section a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .tools-section a:hover {
+    color: #555;
+  }
