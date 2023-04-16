@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Game Development Portfolio</title>
+    <title>Marc Rozendaal Portfolio</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <nav class="nav-menu">
       <ul>
-        <li><a href="#" data-target="games">Games</a></li>
-        <li><a href="#" data-target="tools">Tools</a></li>
+        <li><a href="#" data-target="about">About</a></li>
+        <li><a href="#" data-target="projects">Projects</a></li>
+        <li><a href="#" data-target="contact">Contact</a></li>
       </ul>
     </nav>
-    <section id="items" class="items-section">
-        <section id="games" class="games-section">
-        <h2>Games</h2>
-        <ul>
+
+    <div id="about" class="about-section">
+      <h1>About</h1>
+    </div>
+
+    <div id="project-lists" class="project-lists">
+      <h1>Projects</h1>
+      <div id="projects" class = "projects-section">
+        <div id="games" class="projectList games">
+          <h2>Games</h2>
+          <ul>
             <li><a href="#">Game 1</a></li>
             <li><a href="#">Game 2</a></li>
             <li><a href="#">Game 3</a></li>
-        </ul>
-        </section>
-        <section id="tools" class="tools-section">
-        <h2>Tools</h2>
-        <ul>
+          </ul>
+        </div>
+        <div id="tools" class="projectList tools">
+          <h2>Tools</h2>
+          <ul>
             <li><a href="#">Tool 1</a></li>
             <li><a href="#">Tool 2</a></li>
             <li><a href="#">Tool 3</a></li>
-        </ul>
-        </section>
-    </section>
+          </ul>
+        </div>
+        <div id="experiments" class="projectList experiments">
+          <h2>Experiments</h2>
+          <ul>
+            <li><a href="#">Experiment 1</a></li>
+            <li><a href="#">Experiment 2</a></li>
+            <li><a href="#">Experiment 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="contact-section">
+      <h1>Contact</h1>
+    </div>
+
   </body>
 </html>
