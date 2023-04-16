@@ -52,8 +52,53 @@ body {
     padding-bottom: 30px;
 }
 
-.about {
+.main-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
+}
+
+.left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: start;
+}
+
+.left-item {
+    padding-right: 3%;
+}
+
+.embed {
+    padding-top: 3%;
+    width: 100%;
+    max-width: 585px;
+    aspect-ratio: 3 / 1;
+}
+
+.thumbnail {
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    padding-top: 3%;
+    padding-right: 3%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    align-items: flex-end;
+}
+
+.right-item {
+    width: 80%;
+    aspect-ratio: 16 / 9;
+}
+
+.box {
+    padding-left: 3%;
+}
+
+.video {
+    padding-top: 3%;
+    padding-left: 3%;
 }
