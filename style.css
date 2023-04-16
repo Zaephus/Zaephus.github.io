@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
   }
+
+  @font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Regular.otf);
+  }
   
   body {
     font-family: Montserrat;
