@@ -13,39 +13,21 @@ body {
     margin: 0;
 }
 
-.nav-menu {
-    background-color: #333;
-    color: #fff;
+.Title {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .Title :hover {
+    color: #555;
+  }
+  
+  .Title h1 {
+    font-size: 300%;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
-    position: relative;
-    z-index: 1;
-}
-
-.nav-menu ul {
-    background-color: #333;
-    list-style: none;
-    margin: 0px;
-    padding: 10px;
-    display: flex;
-}
-
-.nav-menu li {
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.nav-menu a {
-    background-color: #333;
-    display: flex;
-    padding: 10px;
-    text-decoration: none;
-    color: #fff;
-}
-
-.nav-menu a:hover {
-    background-color: #555;
-}
+  }
 
 h1 {
     display: flex;
