@@ -16,22 +16,17 @@ body {
 .Title {
     color: #000;
     text-decoration: none;
-}
-
+  }
+  
 .Title :hover {
-    color: #555;    
+    color: #555;
 }
-
+  
 .Title h1 {
     font-size: 300%;
     margin-top: 50px;
     display: flex;
     justify-content: center;
-}
-
-.logo {
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .main-body {
@@ -50,13 +45,6 @@ body {
     padding-right: 3%;
 }
 
-.embed {
-    padding-top: 3%;
-    width: 100%;
-    max-width: 585px;
-    aspect-ratio: 3 / 1;
-}
-
 .thumbnail {
     width: 80%;
     aspect-ratio: 16 / 9;
@@ -73,14 +61,8 @@ body {
 
 .right-item {
     width: 80%;
-    aspect-ratio: 16 / 9;
 }
 
 .box {
-    padding-left: 3%;
-}
-
-.video {
-    padding-top: 3%;
     padding-left: 3%;
 }
