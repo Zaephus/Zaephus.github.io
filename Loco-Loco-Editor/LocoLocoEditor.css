@@ -16,18 +16,18 @@ body {
 .Title {
     color: #000;
     text-decoration: none;
-  }
-  
-  .Title :hover {
+}
+
+.Title :hover {
     color: #555;
-  }
-  
-  .Title h1 {
+}
+
+.Title h1 {
     font-size: 300%;
     margin-top: 50px;
     display: flex;
     justify-content: center;
-  }
+}
 
 h1 {
     display: flex;
@@ -49,4 +49,15 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.github-page {
+    width: 25%;
+    padding-bottom: 5%;
+}
+
+.github-page img {
+    border-radius: 20vmin;
+    background-color: #a5a581;
+    width: 100%;
 }

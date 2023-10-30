@@ -1,0 +1,99 @@
+* {
+    background-color: #ffd29a;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../Montserrat-Regular.otf);
+}
+
+body {
+    font-family: Montserrat;
+    margin: 0;
+}
+
+.Title {
+    color: #000;
+    text-decoration: none;
+}
+
+.Title :hover {
+    color: #555;    
+}
+
+.Title h1 {
+    font-size: 300%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    justify-content: center;
+}
+
+.main-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.left-item {
+    padding-right: 3%;
+}
+
+.embed {
+    padding-top: 3%;
+    width: 100%;
+    max-width: 585px;
+    aspect-ratio: 3 / 1;
+}
+
+.thumbnail {
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    padding-top: 3%;
+    padding-right: 3%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    align-items: flex-end;
+}
+
+.right-item {
+    width: 80%;
+    align-self: right;
+    padding-bottom: 3%;
+    padding-left: 3%;
+}
+
+.video {
+    padding-left: 3%;
+    aspect-ratio: 16/9;
+}
+
+.github-page {
+    width: 40%;
+}
+
+.github-page img {
+    border-radius: 20vmin;
+    background-color: #e0921b;
+    width: 100%;
+}

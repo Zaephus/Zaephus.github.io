@@ -1,6 +1,6 @@
 * {
-    box-sizing: border-box;
     background-color: #c8c8af;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -73,14 +73,22 @@ body {
 
 .right-item {
     width: 80%;
-    aspect-ratio: 16 / 9;
-}
-
-.box {
+    align-self: right;
+    padding-bottom: 3%;
     padding-left: 3%;
 }
 
 .video {
-    padding-top: 3%;
     padding-left: 3%;
+    aspect-ratio: 16/9;
+}
+
+.github-page {
+    width: 40%;
+}
+
+.github-page img {
+    border-radius: 20vmin;
+    background-color: #a5a581;
+    width: 100%;
 }
