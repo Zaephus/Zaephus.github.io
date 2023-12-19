@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    background-color: #FFAAAE;
+    background-color: #FFD9DB;
 }
 
 @font-face {
@@ -53,7 +53,7 @@ body {
 }
 
 .left-item {
-    padding-right: 3%;
+    margin-right: 3%;
 }
 
 .embed {
@@ -66,9 +66,17 @@ body {
 .thumbnail {
     width: 80%;
     aspect-ratio: 16 / 9;
-    padding-top: 3%;
-    padding-right: 3%;
+    margin-top: 3%;
+    margin-right: 3%;
     border: 2px solid #fff;
+}
+
+h3 {
+    font-size: 125%;
+}
+
+.description {
+    font-size: 110%;
 }
 
 .right {
@@ -82,7 +90,7 @@ body {
     width: 80%;
     align-self: right;
     margin-bottom: 3%;
-    margin-left: 3%; 
+    margin-right: 3%; 
 }
 
 .video {

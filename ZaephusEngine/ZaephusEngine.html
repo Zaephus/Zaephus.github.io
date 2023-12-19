@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marc Rozendaal Portfolio</title>
+        <link rel="stylesheet" href="ZaephusEngine.css">
+    </head>
+
+    <body>
+
+        <div>
+            <a class="Title" href="../index.html"><h1>Marc Rozendaal</h1></a>
+        </div>
+
+        <div>
+            <img class="logo" src="Thumbnail.png" alt="Zaephus Engine Thumbnail">
+            <div class="main-body">
+                <div class="left">
+                    <h3 class="left-item">
+                        Since May 2023
+                    </h3>
+                    <p class="description left-item">
+                        During a course at HKU, called Graphics Programming, we learned the basics of rendering
+                        with OpenGL. <br> I decided to work with <a href="https://opentk.net/">OpenTK</a>, which is a set of C#
+                        bindings for OpenGL. During the course I spent my time working on creating a full fledged
+                        and easy to use rendering engine, with some basics of a game engine.
+                    </p>
+                    <p class="description left-item">
+                        I added most basic rendering features to this engine, like lighting, texturing and lit and unlit
+                        materials. I built a pipeline to make it as easy as I could make it to create and setup a scene with
+                        models, materials and a camera. I added model loading by using the
+                        <a href="https://github.com/assimp/assimp-net">Assimp-Net</a> library, which makes it easy to load in
+                        both models and materials from 3D model files. I also spent some time working on optimizing the rendering
+                        by decreasing the amount of draw calls made on meshes and materials. Doing this I was able to draw 10x to
+                        50x more objects than I was able to before.
+                    </p>
+                    <p class="description left-item">
+                        I built my own component and game object system, allowing for the quick creating of modular game objects.
+                        One of these components is a Transform component, containing the position and directions of the game object.
+                        A Transform also contains the world matrix for the game object, which is used in all transformations of the
+                        game object and is used by the shaders to display the objects correctly. 
+                    </p>
+                    <p class="description left-item">
+                        A lot of my time was spent building my own math library, including all vectors, quaternions and matrix classes.
+                        I decided to work on this since I was interested in this type of math and wanted to get a deeper understanding
+                        into this type of math. These classes required multiple edits and additions during the course of creating this
+                        engine, forcing me to dive deeper and deeper into the math of these classes.
+                    </p>
+                    <p class="description left-item">
+                        Since C++ is a more powerful and widely used language than C# is in graphics programming, I have recently
+                        started rewriting this engine in C++ and Vulkan. I chose Vulkan since it is a newer graphics API than OpenGL,
+                        as a way to challenge myself and be able to dive deeper into the world of graphics programming. I started out
+                        by following the tutorial on <a href="https://vulkan-tutorial.com/">vulkan-tutorial.com</a>, and I am currently
+                        refactoring and abstracting the code I wrote following that tutorial. The plan is to implement all the features
+                        from the C# engine. Afterwards I want to add a UI and expand the feature set of the engine, with a focus on
+                        usability and expandability.
+                    </p>
+                    <a class="left-item github-page" href="https://github.com/Zaephus/Project_Context_II"><img src="../Github_Banner.png"alt="Project Repository"></a>
+                
+                </div>
+                <div class="right">
+                    <img class="thumbnail right-item" src="1000_multicoloured.png" alt="Windswept still">
+                    <img class="thumbnail right-item" src="10000_multicoloured.png" alt="Windswept still">
+                </div>
+            </div> 
+        </div>
+
+    </body>
+
+</html>

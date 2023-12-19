@@ -43,6 +43,14 @@ h1 {
     justify-self: center;
 }
 
+h3 {
+    font-size: 125%;
+}
+
+.description {
+    font-size: 110%;
+}
+
 .main-body {
     padding-left: 15%;
     padding-right: 15%;

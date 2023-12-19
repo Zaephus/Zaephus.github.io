@@ -92,3 +92,11 @@ body {
     background-color: #a5a581;
     width: 100%;
 }
+
+h3 {
+    font-size: 125%;
+}
+
+.description {
+    font-size: 110%;
+}

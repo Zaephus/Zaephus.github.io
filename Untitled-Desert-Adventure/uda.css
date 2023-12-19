@@ -69,6 +69,14 @@ body {
     padding-right: 3%;
 }
 
+h3 {
+    font-size: 125%;
+}
+
+.description {
+    font-size: 110%;
+}
+
 .right {
     display: flex;
     flex-direction: column;
@@ -87,6 +95,7 @@ body {
     padding-left: 3%;
     aspect-ratio: 16/9;
 }
+
 
 .github-page {
     width: 40%;
