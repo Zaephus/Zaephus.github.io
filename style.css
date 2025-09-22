@@ -4,18 +4,23 @@
 }
 
 @font-face {
-    font-family: Montserrat;
-    src: url(Montserrat-Regular.otf);
+    font-family: regular;
+    src: url(Fonts/CallingCode-Regular.otf);
 }
 
 body {
-    font-family: Montserrat;
+    font-family: regular;
+    margin: 0;
+}
+
+p {
+    font-size: 24px;
     margin: 0;
 }
 
 .header {
-    margin-top: 50px;
-    margin-bottom: 5%;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
 }
 
 .header-text {
@@ -26,17 +31,28 @@ body {
     margin: 0;
 }
 
+h1.header-text { font-size: 120px; }
+h2.header-text { font-size: 30px; }
+
 .content {
-    margin-left: 16vmin;
-    margin-right: 16vmin;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
 .divider {
     border-top: 4px solid #bbb;
     border-radius: 2px;
 
-    margin-left: 20vmin;
-    margin-right: 20vmin;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
 }
 
 .highlight {
@@ -47,16 +63,61 @@ body {
 img {
     max-width: 100%;
 }
-.image {
+.highlight-image {
     flex-basis: 120%;
+    min-width: 25vmin;
     /* margin-right: 3vmin; */
 }
 .highlight-text {
-    font-size: 20px;
-    padding-left: 20px;
+    padding-left: 8vmin;
 }
 
+.projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
 
+.project {
+    /* width: 25vw; */
+    /* max-width: 500px; */
+}
+
+.thumbnail {
+    background-color: unset;
+    
+    aspect-ratio: calc(16/9);
+    border-radius: 9%/16%;
+    
+    transition: transform 0.1s ease-in-out;
+
+    filter: drop-shadow(1vmin 1vmin 0.5vmin #6161619f)
+}
+
+.thumbnail:hover {
+    transform: scale(105%);
+}
+
+@media (max-aspect-ratio: 3/4) {
+    p {
+        font-size: 18px;
+    }
+
+    h1.header-text { font-size: 80px; }
+    h2.header-text { font-size: 20px; }
+}
+
+@media (max-aspect-ratio: 1) {
+    .content {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .projects {
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+}
 
 /* 
 
@@ -78,17 +139,6 @@ img {
     max-width: 38%;
 
     padding: 0 5%;
-}
-
-.thumbnail {
-    background-color: unset;
-    
-    width: 100%;
-    margin-bottom: 5vmin;
-    
-    transition: transform 0.1s ease-in-out;
-
-    filter: drop-shadow(1vmin 1vmin 0.5vmin #6161619f)
 } */
 
 /* .sqr-img {
@@ -107,9 +157,7 @@ img {
     border-radius: 16%/9%;
 } */
 
-/* .thumbnail:hover {
-    transform: translate(2.5%, 2.5%) scale(105%);
-}
+/* 
 
 .white-outline {
     color: #000000;
