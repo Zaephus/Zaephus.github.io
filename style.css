@@ -11,6 +11,17 @@
 body {
     font-family: regular;
     margin: 0;
+
+    overflow: hidden;
+}
+
+img {
+    background-color: unset;
+    max-width: 100%;
+
+    vertical-align: top;
+
+    filter: drop-shadow(1vmin 1vmin 0.5vmin #6161619f)
 }
 
 p {
@@ -60,13 +71,9 @@ h2.header-text { font-size: 30px; }
     justify-content: center;
 }
 
-img {
-    max-width: 100%;
-}
 .highlight-image {
     flex-basis: 120%;
     min-width: 25vmin;
-    /* margin-right: 3vmin; */
 }
 .highlight-text {
     padding-left: 8vmin;
@@ -75,27 +82,49 @@ img {
 .projects {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 30px;
-}
 
-.project {
-    /* width: 25vw; */
-    /* max-width: 500px; */
+    gap: 30px;
+
+    margin-bottom: 30px;
 }
 
 .thumbnail {
-    background-color: unset;
-    
     aspect-ratio: calc(16/9);
     border-radius: 9%/16%;
     
     transition: transform 0.1s ease-in-out;
-
-    filter: drop-shadow(1vmin 1vmin 0.5vmin #6161619f)
 }
 
 .thumbnail:hover {
     transform: scale(105%);
+}
+
+.overlay {
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow-y: auto;
+
+    background-color: #b3b3b351;
+}
+
+.overlay-content {
+    display: flex;
+
+    min-height: 20%;
+
+    margin: 20%;
+    padding: 2%;
+
+    
+    border-radius: 3vmin;
 }
 
 @media (max-aspect-ratio: 3/4) {
