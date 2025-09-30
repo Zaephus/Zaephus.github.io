@@ -12,7 +12,7 @@ body {
     font-family: regular;
     margin: 0;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 img {
@@ -20,8 +20,15 @@ img {
     max-width: 100%;
 
     vertical-align: top;
+}
 
-    filter: drop-shadow(1vmin 1vmin 0.5vmin #6161619f)
+a {
+    background-color: unset;
+}
+
+.shadow {
+    background-color: unset;
+    filter: drop-shadow(0.8vmin 0.8vmin 0.4vmin #6161619f)
 }
 
 p {
@@ -54,8 +61,8 @@ h2.header-text { font-size: 30px; }
     border-top: 4px solid #bbb;
     border-radius: 2px;
 
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 
     margin-left: 5%;
     margin-right: 5%;
@@ -64,6 +71,39 @@ h2.header-text { font-size: 30px; }
 .about {
     display: flex;
     justify-content: center;
+
+    flex-direction: column;
+}
+
+.about-text {
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+.socials {
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 3%;
+
+    margin-top: 2vh;
+}
+
+.social {
+    display: flex;
+    background-color: #d2d2d2;
+
+    width: 7%;
+    padding: 0.9%;
+
+    max-width: 90px;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 1.2vmin;
 }
 
 .highlight {
@@ -91,15 +131,19 @@ h2.header-text { font-size: 30px; }
 .thumbnail {
     aspect-ratio: calc(16/9);
     border-radius: 9%/16%;
-    
+}
+
+.hover-anim {    
     transition: transform 0.1s ease-in-out;
 }
 
-.thumbnail:hover {
+.hover-anim:hover {
     transform: scale(105%);
 }
 
 .overlay {
+    display: none; /* temp */
+
     position: fixed;
 
     top: 0;
