@@ -32,7 +32,7 @@ a {
 }
 
 p {
-    font-size: 24px;
+    font-size: 20px;
     margin: 0;
 }
 
@@ -159,21 +159,51 @@ h2.header-text { font-size: 30px; }
     background-color: #b3b3b351;
 }
 
-.overlay-content {
+.overlay-body {
     display: flex;
+    flex-direction: column;
+
+    border-radius: 3vmin;
 
     min-height: 20%;
-
-    margin: 20%;
-    padding: 2%;
-
     
-    border-radius: 3vmin;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.overlay-header {
+    padding-top: 2%;
+    margin-bottom: 4%;
+
+    background-color: unset;
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
+    gap: 6%;
+
+    padding: 4%;
+
+    background-color: unset;
+}
+
+.overlay-column {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0px;
 }
 
 @media (max-aspect-ratio: 3/4) {
     p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     h1.header-text { font-size: 80px; }

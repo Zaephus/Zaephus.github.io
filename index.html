@@ -49,9 +49,7 @@
                     <img src="Zaephus_Engine_Logo_v3_Colored.png">
                 </div>
                 <div class="highlight-text">
-                    <p>
-                        Text about the engine and project!
-                    </p>
+                    <h2 class="header-text">Zaephus Engine</h2>
                     <br>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -66,11 +64,11 @@
             <hr class="divider">
 
             <div class="projects">
-                <div class="project">
-                    <img class="thumbnail hover-anim shadow" src="Untitled-Desert-Adventure/uda_title.png">
-                </div>
-                <div class="project">
+                <div class="project" onclick="showOverlay('loco-loco');">
                     <img class="thumbnail hover-anim shadow" src="Loco-Loco/LocoLocoTitle.png">
+                </div>
+                <div class="project" onclick="showOverlay('uda');">
+                    <img class="thumbnail hover-anim shadow" src="Untitled-Desert-Adventure/uda_title.png">
                 </div>
                 <div class="project">
                     <img class="thumbnail hover-anim shadow" src="Loco-Loco-Editor/EditorThumbnail.png">
@@ -88,11 +86,50 @@
 
         </div>
 
-        <div class="overlay">
-            <div class="overlay-content">
-                
+        <div class="overlay" id="overlay-loco-loco">
+            <div class="overlay-body">
+                <div class="overlay-header">
+                    <img src="Loco-Loco/LocoLoco Logo.png">
+                </div>
+                <div class="overlay-content">
+                    <div class="overlay-column overlay-photos">
+                        <img class="thumbnail shadow" src="Loco-Loco/LocoLoco Thumbnail.png">
+                        <img class="thumbnail shadow" src="Loco-Loco/LocoLoco Box.png">
+                    </div>
+                    <div class="overlay-column overlay-text">
+                        <p>
+                            Loco Loco was a group project at HKU, for which we had about four weeks. The assignment was to create an experience with both a digital and physical part. Loco Loco is a puzzle game where the player takes on the role of a railway manager. The goal is to safely guide the train from point A to point B by working a number of railway switches. The game consists of a large arcade machine, with a screen in the middle and two levers on either side. The levers have colored icons on them, which match with the colored icons next to the switches in the game. Pulling a lever switches every railway switch with the corresponding icon.
+                        </p>
+                        <br>
+                        <p>
+                            During this project I was in charge of gameplay programming, where I spent most of my time working on the movement for the train and the functionality of the switches. I also built a basic Level Editor, with which my teammates could quickly build and iterate on levels. At a later date I improved and extended the editor into a standalone editor for another course at HKU.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="overlay" id="overlay-uda">
+            <div class="overlay-content">
+                Untitled-Desert-Adventure overlay
+            </div>
+        </div>
+
+        <script>
+            function showOverlay(_name) {
+                let overlay = document.getElementById(`overlay-${_name}`);
+                overlay.style.display = "block";
+
+                document.body.style.overflow = "hidden";
+
+                overlay.onclick = function(e) {
+                    if(e.target == overlay) {
+                        overlay.style.display = "none";
+                        document.body.style.overflow = "visible"
+                    }
+                }
+            }
+        </script>
 
     </body>
 </html>
