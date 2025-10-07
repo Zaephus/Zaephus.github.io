@@ -31,12 +31,12 @@
                     </div>
                     <div class="social hover-anim shadow" title="Github Profile">
                         <a target="_blank" href="https://github.com/Zaephus">
-                            <img src="Socials/github-mark/github-mark.svg">
+                            <img src="Socials/github/github-mark.svg">
                         </a>
                     </div>
                     <div class="social hover-anim shadow" title="LeetCode Profile">
                         <a target="_blank" href="https://leetcode.com/u/Zaephus">
-                            <img src="Socials/leetcode-logo/icons8-leetcode-96.png">
+                            <img src="Socials/leetcode/icons8-leetcode-96.png">
                         </a>
                     </div>
                 </div>
@@ -64,46 +64,87 @@
             <hr class="divider">
 
             <div class="projects">
-                <div class="project" onclick="showOverlay('loco-loco');">
-                    <img class="thumbnail hover-anim shadow" src="Loco-Loco/LocoLocoTitle.png">
+                <div class="project hover-anim shadow" onclick="showOverlay('loco-loco');">
+                    <div class="project-title thumbnail">
+                        <h3>Loco Loco, 2022</h3>
+                    </div>
+                    <img class="thumbnail" src="Loco-Loco/LocoLocoTitle.png">
                 </div>
-                <div class="project" onclick="showOverlay('uda');">
-                    <img class="thumbnail hover-anim shadow" src="Untitled-Desert-Adventure/uda_title.png">
+                <div class="project hover-anim shadow" onclick="showOverlay('uda');">
+                    <div class="project-title thumbnail">
+                        <h3>Untitled Desert Adventure, 2023</h3>
+                    </div>
+                    <img class="thumbnail" src="Untitled-Desert-Adventure/uda_title.png">
                 </div>
-                <div class="project">
-                    <img class="thumbnail hover-anim shadow" src="Loco-Loco-Editor/EditorThumbnail.png">
+                <div class="project hover-anim shadow">
+                    <div class="project-title thumbnail">
+                        <h3>Loco Loco Editor, 2023</h3>
+                    </div>
+                    <img class="thumbnail" src="Loco-Loco-Editor/EditorThumbnail.png">
                 </div>
-                <div class="project">
-                    <img class="thumbnail hover-anim shadow" src="Procedural-Trees/Proc_Trees_Thumbnail.png">
+                <div class="project hover-anim shadow">
+                    <div class="project-title thumbnail">
+                        <h3>Procedural Trees, 2023</h3>
+                    </div>
+                    <img class="thumbnail" src="Procedural-Trees/Proc_Trees_Thumbnail.png">
                 </div>
-                <div class="project">
-                    <img class="thumbnail hover-anim shadow" src="Windswept/Logo.png">
+                <div class="project hover-anim shadow">
+                    <div class="project-title thumbnail">
+                        <h3>Windswept, 2023</h3>
+                    </div>
+                    <img class="thumbnail" src="Windswept/Logo.png">
                 </div>
-                <div class="project">
-                    <img class="thumbnail hover-anim shadow" src="ZaephusEngine/Thumbnail.png">
+                <div class="project hover-anim shadow">
+                    <div class="project-title thumbnail">
+                        <h3>Zaephus Engine, 2025</h3>
+                    </div>
+                    <img class="thumbnail" src="ZaephusEngine/Thumbnail.png">
                 </div>
             </div>
 
         </div>
 
-        <div class="overlay" id="overlay-loco-loco">
-            <div class="overlay-body">
+        <div class="overlay" id="overlay-loco-loco" style="background-color: #d2c8b7ac;">
+            <div class="overlay-body" id="body" style="background-color: #f7ecd8;">
                 <div class="overlay-header">
-                    <img src="Loco-Loco/LocoLoco Logo.png">
+                    <img src="Loco-Loco/loco loco Logo.svg">
                 </div>
                 <div class="overlay-content">
                     <div class="overlay-column overlay-photos">
                         <img class="thumbnail shadow" src="Loco-Loco/LocoLoco Thumbnail.png">
                         <img class="thumbnail shadow" src="Loco-Loco/LocoLoco Box.png">
+                        <iframe class="thumbnail shadow" src="https://www.youtube.com/embed/WxkYkDfPqEo" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                
                     </div>
-                    <div class="overlay-column overlay-text">
-                        <p>
-                            Loco Loco was a group project at HKU, for which we had about four weeks. The assignment was to create an experience with both a digital and physical part. Loco Loco is a puzzle game where the player takes on the role of a railway manager. The goal is to safely guide the train from point A to point B by working a number of railway switches. The game consists of a large arcade machine, with a screen in the middle and two levers on either side. The levers have colored icons on them, which match with the colored icons next to the switches in the game. Pulling a lever switches every railway switch with the corresponding icon.
-                        </p>
-                        <br>
-                        <p>
-                            During this project I was in charge of gameplay programming, where I spent most of my time working on the movement for the train and the functionality of the switches. I also built a basic Level Editor, with which my teammates could quickly build and iterate on levels. At a later date I improved and extended the editor into a standalone editor for another course at HKU.
-                        </p>
+                    <div class="overlay-column">
+                        <div class="overlay-text">
+                            <h2>
+                                Loco Loco, 2022
+                            </h2>
+                            <h3>
+                                Unity, Arduino
+                            </h3>
+                            <br>
+                            <p>
+                                Loco Loco was a group project at HKU, for which we had about four weeks. The assignment was to create an experience with both a digital and physical part. Loco Loco is a puzzle game where the player takes on the role of a railway manager. The goal is to safely guide the train from point A to point B by working a number of railway switches. The game consists of a large arcade machine, with a screen in the middle and two levers on either side. The levers have colored icons on them, which match with the colored icons next to the switches in the game. Pulling a lever switches every railway switch with the corresponding icon.
+                            </p>
+                            <br>
+                            <p>
+                                During this project I was in charge of gameplay programming, where I spent most of my time working on the movement for the train and the functionality of the switches. I also built a basic Level Editor, with which my teammates could quickly build and iterate on levels. At a later date I improved and extended the editor into a standalone editor for another course at HKU.
+                            </p>
+                        </div>
+                        <div class="item-links">
+                            <div class="item-github hover-anim shadow" title="Loco Loco Repository">
+                                <a target="_blank" href="https://github.com/Zaephus/Project_Hybrid-Honey_Badgers_Inc">
+                                    <img src="Socials/github/GitHub_Banner.png">
+                                </a>
+                            </div>
+                            <div class="hover-anim shadow" title="Loco Loco itch Page">
+                                <a target="_blank" href="https://zaephus.itch.io/loco-loco">
+                                    <img src="Socials/itch/badges/badge-color.svg">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -118,16 +159,25 @@
         <script>
             function showOverlay(_name) {
                 let overlay = document.getElementById(`overlay-${_name}`);
-                overlay.style.display = "block";
+                let overlayBody = overlay.querySelector('#body');
+
+                overlay.classList.toggle("overlay-visible");
+                overlayBody.classList.toggle("overlay-body-visible");
 
                 document.body.style.overflow = "hidden";
 
                 overlay.onclick = function(e) {
                     if(e.target == overlay) {
-                        overlay.style.display = "none";
-                        document.body.style.overflow = "visible"
+                        closeOverlay(overlay, overlayBody);
                     }
                 }
+            }
+
+            function closeOverlay(_overlay, _overlayBody) {
+                _overlay.classList.toggle("overlay-visible");
+                _overlayBody.classList.toggle("overlay-body-visible");
+
+                document.body.style.overflow = "visible"
             }
         </script>
 

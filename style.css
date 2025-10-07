@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     background-color: #eaeaea;
@@ -11,8 +12,12 @@
 body {
     font-family: regular;
     margin: 0;
+    
+    margin-bottom: 5vh;
+}
 
-    /* overflow: hidden; */
+div {
+    background-color: inherit;
 }
 
 img {
@@ -26,12 +31,18 @@ a {
     background-color: unset;
 }
 
+h1, h2, h3, h4 {
+    margin: 0;
+    background-color: inherit;
+}
+
 .shadow {
     background-color: unset;
     filter: drop-shadow(0.8vmin 0.8vmin 0.4vmin #6161619f)
 }
 
 p {
+    background-color: inherit;
     font-size: 20px;
     margin: 0;
 }
@@ -84,7 +95,6 @@ h2.header-text { font-size: 30px; }
     display: flex;
 
     justify-content: center;
-    align-items: stretch;
 
     gap: 3%;
 
@@ -128,12 +138,49 @@ h2.header-text { font-size: 30px; }
     margin-bottom: 30px;
 }
 
+.project {
+    position: relative;
+}
+
+.project-title {
+    position: absolute;
+    bottom: 0%;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    opacity: 0;
+
+    background-color: #000;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0.0) 0%, rgba(0, 0, 0, 0.5) 85%);
+    color: white;
+    
+    width: 100%;
+    height: 100%;
+
+    font-size: 0;
+
+    z-index: 10;
+
+    transition: opacity 0.3s ease-in-out, font-size 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+}
+
+.project:hover
+.project-title {
+    opacity: 1;
+
+    font-size: inherit;
+
+    padding-bottom: 3%;
+}
+
 .thumbnail {
     aspect-ratio: calc(16/9);
     border-radius: 9%/16%;
 }
 
-.hover-anim {    
+.hover-anim {
     transition: transform 0.1s ease-in-out;
 }
 
@@ -142,21 +189,30 @@ h2.header-text { font-size: 30px; }
 }
 
 .overlay {
-    display: none; /* temp */
+    display: block;
+    opacity: 0;
 
+    pointer-events: none;
+    
     position: fixed;
-
+    
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-
+    
     width: 100%;
     height: 100%;
+    
+    overflow-y: scroll;
 
-    overflow-y: auto;
+    transition: opacity 0.4s ease-in-out;
+}
 
-    background-color: #b3b3b351;
+.overlay-visible {
+    opacity: 1;
+
+    pointer-events: all;
 }
 
 .overlay-body {
@@ -164,17 +220,23 @@ h2.header-text { font-size: 30px; }
     flex-direction: column;
 
     border-radius: 3vmin;
-
-    min-height: 20%;
     
-    margin-top: 2%;
+    transform: scale(0%);
+
+    transition: transform 0.4s ease-in-out;
+    
+    margin-top: 7vmin;
+    margin-bottom: 3vmin;
     margin-left: 10%;
     margin-right: 10%;
 }
 
+.overlay-body-visible {
+    transform: scale(100%);
+}
+
 .overlay-header {
     padding-top: 2%;
-    margin-bottom: 4%;
 
     background-color: unset;
 }
@@ -182,9 +244,6 @@ h2.header-text { font-size: 30px; }
 .overlay-content {
     display: flex;
     flex-direction: row;
-
-    justify-content: center;
-
     gap: 6%;
 
     padding: 4%;
@@ -195,10 +254,37 @@ h2.header-text { font-size: 30px; }
 .overlay-column {
     display: flex;
     flex-direction: column;
+    gap: 2vh;
+}
 
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0px;
+.overlay-photos {
+    max-width: 500px;
+}
+
+.item-links {
+    align-self: flex-end;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1vh;
+
+    width: 40%;
+    max-width: 250px;
+}
+
+.item-github {
+    background-color: #c4c4c4;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.6vmin;
+
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-aspect-ratio: 3/4) {
@@ -221,61 +307,3 @@ h2.header-text { font-size: 30px; }
         gap: 20px;
     }
 }
-
-/* 
-
-@media (max-width: 1200px) {
-    .content {
-        padding: 0 0;
-    }
-}
-
-.about-column {
-    flex: 24%;
-    max-width: 24%;
-
-    padding: 0 5%;
-}
-
-.content-column {
-    flex: 38%;
-    max-width: 38%;
-
-    padding: 0 5%;
-} */
-
-/* .sqr-img {
-    max-width: 100%;
-    flex-basis: 40%;
-    aspect-ratio: 1;
-}
-
-.hor-img {
-    aspect-ratio: calc(16/9);
-    border-radius: 9%/16%;
-}
-
-.ver-img {
-    aspect-ratio: calc(9/16);
-    border-radius: 16%/9%;
-} */
-
-/* 
-
-.white-outline {
-    color: #000000;
-    text-shadow: 
-        1px 1px 0 #fff,
-        -1px 1px 0 #fff,
-        -1px -1px 0 #fff,
-        1px -1px 0 #fff;
-}
-
-.black-outline {
-    color: #fff;
-    text-shadow: 
-        1px 1px 0 #000,
-        -1px 1px 0 #000,
-        -1px -1px 0 #000,
-        1px -1px 0 #000;
-} */
